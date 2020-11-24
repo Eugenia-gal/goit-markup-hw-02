@@ -26,12 +26,16 @@ body {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section .title {
@@ -76,7 +80,7 @@ body {
 }
 
 /* address */
-.page-header-address .link {
+.page-header .address .link {
   color: var(--secondary-text-color);
 
   font-style: normal;
@@ -86,8 +90,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.page-header-address .link:hover,
-.page-header-address .link:focus {
+.page-header .address .link:hover,
+.page-header .address .link:focus {
   color: var(--accent-color);
 }
 
@@ -132,7 +136,7 @@ body {
   text-transform: uppercase;
 }
 
-.description {
+.section .description {
   color: var(--secondary-text-color);
 
   font-weight: 400;
@@ -187,7 +191,7 @@ body {
   color: #ffffff;
 }
 
-.address .link {
+.page-footer .address .link {
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
@@ -197,7 +201,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address .map-link {
+.page-footer .address .map-link {
   color: #ffffff;
 }
 
